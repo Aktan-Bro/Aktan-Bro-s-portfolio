@@ -1,0 +1,471 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    overflow-x: hidden;
+}
+
+body {
+    min-height: 100vh;
+    margin: 0;
+    padding-top: 20px;
+    background-color: #0C0C0D;
+    color: white;
+    font-family: Arial, sans-serif;
+}
+
+.menyu {
+    width: 359.25px;
+    height: 52.5px;
+    margin: 0 auto;
+    background-color: #131313;
+    border-radius: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 31.5px;
+}
+
+.menyu a {
+    color: #B292FF;
+    text-decoration: none;
+}
+
+.menyu .tekushaya {
+    color: white;
+}
+
+
+.obo-mne {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 50px;
+    width: 1250px;
+    max-width: 90%;
+    margin: 60px 170px 0 170px;
+}
+
+.tekst {
+    max-width: 480px;
+}
+
+.tekst h1 {
+    margin: 0 0 10px 0;
+    font-size: 56.25px;
+    font-weight: normal;
+}
+
+.tekst p {
+    margin-bottom: 30px;
+    font-size: 18px;
+    line-height: 36px;
+    color: #4f4f4f;
+}
+
+.tekst strong {
+    color: white;
+}
+
+.knopka {
+    padding: 12px 34px;
+    border-radius: 20px;
+    background-color: white;
+    color: black;
+    font-size: 14px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.foto img {
+    border-radius: 100px;
+}
+
+
+.stazh {
+    display: flex;
+    align-items: center;
+    gap: 100px;
+    width: 1170px;
+    max-width: 90%;
+    margin: 150px 170px 0 170px;
+}
+
+.stazh-tekst {
+    display: flex;
+    flex-direction: column;
+    flex-shrink: 0;
+    width: 200px;
+}
+
+.malenkij {
+    margin: 0;
+    font-size: 14px;
+    color: #8a8a8a;
+}
+
+.stazh-tekst h2 {
+    margin: 5px 0;
+    font-size: 72px;
+}
+
+.karusel-blok {
+    flex: 1;
+    min-width: 0;
+}
+
+.karusel {
+    display: flex;
+    gap: 38px;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scrollbar-width: none;
+}
+
+.karusel::-webkit-scrollbar {
+    display: none;
+}
+
+.kartochka {
+    flex: 0 0 383px;
+    height: 260px;
+    padding: 0 45px;
+    border-radius: 50px;
+    scroll-snap-align: start;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: #222;
+}
+
+.kartochka img {
+    width: 52px;
+    height: 52px;
+    object-fit: contain;
+    align-self: flex-start;
+}
+
+.kartochka h3 {
+    margin: 10px 0 0 0;
+    font-size: 24px;
+}
+
+.kartochka-js     { background-color: #C3CCA0; }
+.kartochka-python { background-color: #7F9DA9; }
+.kartochka-html   { background-color: #FFD9D6; }
+.kartochka-figma  { background-color: #C0E5D7; }
+
+.tochki {
+    display: flex;
+    gap: 10px;
+    margin: 26px 0 0 78px;
+}
+
+.tochka {
+    border: 0;
+    padding: 0;
+    width: 18px;
+    height: 12px;
+    border-radius: 10px;
+    background-color: #555;
+    cursor: pointer;
+    transition: width 0.3s, background-color 0.3s;
+}
+
+.tochka.aktivna {
+    width: 62px;
+    background-color: #e5e5e5;
+}
+
+
+.navyki {
+    margin-top: 300px;
+    text-align: center;
+}
+
+.navyki h2 {
+    margin: 0 0 30px 0;
+    font-size: 56px;
+    font-weight: normal;
+}
+
+.navyk-1 { color: #C39BFF; }
+.navyk-2 { color: #9B5CFF; }
+.navyk-3 { color: #6A1FE0; }
+
+
+.tehnologii {
+    width: 1170px;
+    max-width: 90%;
+    margin: 200px 170px 0 170px;
+}
+
+.tehnologii h2 {
+    margin: 0 0 40px 0;
+    font-size: 32px;
+    font-weight: normal;
+    line-height: 1.2;
+}
+
+.tehnologii-bloki {
+    display: flex;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.blok {
+    min-width: 200px;
+    padding: 18px 24px;
+    background-color: #0F0F10;
+    border: 1px solid #1f1f22;
+    border-radius: 12px;
+}
+
+.blok h4 {
+    margin: 0 0 14px 0;
+    font-size: 12px;
+    font-weight: normal;
+    color: #cfcfcf;
+}
+
+.blok ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.blok li {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 12px;
+    font-size: 11px;
+    color: #8a8a8a;
+}
+
+.blok li:last-child {
+    margin-bottom: 0;
+}
+
+.blok li img {
+    width: 16px;
+    height: 16px;
+    object-fit: contain;
+}
+
+
+footer {
+    width: 1170px;
+    max-width: 90%;
+    margin: 150px auto 0 auto;
+    padding-bottom: 40px;
+}
+
+.polosa {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 56px;
+    padding: 0 30px;
+    background-color: #131313;
+    border-radius: 40px;
+    font-size: 14px;
+    color: #8a8a8a;
+}
+
+.polosa p {
+    margin: 0;
+}
+
+.seti {
+    display: flex;
+    gap: 14px;
+}
+
+.seti img {
+    width: 20px;
+    height: 20px;
+}
+
+.avtor {
+    margin: 20px 0 0 30px;
+    font-size: 10px;
+    color: #8a8a8a;
+}
+
+
+@media (max-width: 768px) {
+
+    body {
+        padding-top: 14px;
+    }
+
+    .menyu {
+        width: 280px;
+        max-width: 90%;
+        height: 38px;
+        gap: 20px;
+        font-size: 12px;
+    }
+
+    .obo-mne {
+        flex-direction: column-reverse;
+        align-items: center;
+        gap: 16px;
+        width: 100%;
+        max-width: 100%;
+        margin: 36px 0 0 0;
+        padding: 0 20px;
+        text-align: center;
+    }
+
+    .foto img {
+        display: block;
+        width: 100px;
+        height: auto;
+        border-radius: 28px;
+    }
+
+    .tekst {
+        max-width: 100%;
+    }
+
+    .tekst h1 {
+        margin-bottom: 8px;
+        font-size: 22px;
+    }
+
+    .tekst p {
+        margin: 0 0 16px 0;
+        font-size: 11px;
+        line-height: 20px;
+    }
+
+    .knopka {
+        display: inline-block;
+        padding: 8px 22px;
+        font-size: 11px;
+    }
+
+    .stazh {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 20px;
+        width: 100%;
+        max-width: 100%;
+        margin: 60px 0 0 0;
+        padding: 0 20px;
+    }
+
+    .stazh-tekst {
+        width: auto;
+        align-items: center;
+        text-align: center;
+    }
+
+    .malenkij {
+        font-size: 10px;
+    }
+
+    .stazh-tekst h2 {
+        margin: 2px 0;
+        font-size: 38px;
+    }
+
+    .karusel-blok {
+        flex: none;
+    }
+
+    .karusel {
+        gap: 12px;
+    }
+
+    .kartochka {
+        flex: 0 0 62%;
+        height: 110px;
+        padding: 0 18px;
+        border-radius: 22px;
+    }
+
+    .kartochka img {
+        width: 26px;
+        height: 26px;
+    }
+
+    .kartochka h3 {
+        margin-top: 6px;
+        font-size: 13px;
+    }
+
+    .tochki {
+        justify-content: center;
+        gap: 6px;
+        margin: 14px 0 0 0;
+    }
+
+    .tochka {
+        width: 9px;
+        height: 7px;
+    }
+
+    .tochka.aktivna {
+        width: 30px;
+    }
+
+    .navyki {
+        margin-top: 90px;
+    }
+
+    .navyki h2 {
+        margin-bottom: 16px;
+        font-size: 20px;
+    }
+
+    .tehnologii {
+        width: 100%;
+        max-width: 100%;
+        margin: 80px 0 0 0;
+        padding: 0 20px;
+    }
+
+    .tehnologii h2 {
+        margin-bottom: 22px;
+        font-size: 14px;
+        text-align: center;
+    }
+
+    .tehnologii-bloki {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 14px;
+    }
+
+    .blok {
+        min-width: 150px;
+        padding: 14px 18px;
+    }
+
+    footer {
+        width: 100%;
+        max-width: 100%;
+        margin: 70px 0 0 0;
+        padding: 0 20px 24px 20px;
+    }
+
+    .polosa {
+        height: 40px;
+        padding: 0 16px;
+        font-size: 11px;
+    }
+
+    .seti img {
+        width: 14px;
+        height: 14px;
+    }
+
+    .avtor {
+        margin: 12px 0 0 16px;
+        font-size: 8px;
+    }
+}

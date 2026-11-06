@@ -1,0 +1,204 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    overflow-x: hidden;
+}
+
+body {
+    min-height: 100vh;
+    margin: 0;
+    padding-top: 20px;
+    background-color: #0C0C0D;
+    color: white;
+    font-family: 'Raleway', Arial, sans-serif;
+}
+
+.menyu {
+    width: 359.25px;
+    height: 52.5px;
+    margin: 0 auto;
+    background-color: #131313;
+    border-radius: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 31.5px;
+}
+
+.menyu a {
+    color: #B292FF;
+    text-decoration: none;
+}
+
+.menyu .tekushaya {
+    color: white;
+}
+
+.spisok {
+    display: flex;
+    flex-direction: column;
+    gap: 70px;
+    width: min(1136px, calc(100% - 40px));
+    margin: 114px auto 0 auto;
+}
+
+.kartochka {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    height: 189px;
+    padding: 51px 91px 0 62px;
+    border: 1px solid #222222;
+    border-radius: 60px;
+}
+
+.info h3 {
+    margin: 0;
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 30px;
+}
+
+.podzagolovok {
+    margin: 4px 0 0 0;
+    font-size: 14px;
+    line-height: 20px;
+    color: #B292FF;
+}
+
+.data {
+    margin: 13px 0 0 0;
+    font-size: 12px;
+    line-height: 16px;
+    color: #555555;
+}
+
+.data span {
+    margin: 0 4px;
+    color: #52B5A3;
+}
+
+.ssylka {
+    margin-top: 34px;
+    font-size: 14px;
+    line-height: 20px;
+    color: #52B5A3;
+    text-decoration: none;
+    white-space: nowrap;
+}
+
+
+footer {
+    width: min(1165px, calc(100% - 40px));
+    margin: 133px auto 0 auto;
+    padding-bottom: 78px;
+}
+
+.polosa {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 66px;
+    padding: 0 52px;
+    background-color: #131313;
+    border-radius: 40px;
+    font-size: 18px;
+    font-weight: 300;
+    color: #8a8a8a;
+}
+
+.polosa p {
+    margin: 0;
+}
+
+.seti {
+    display: flex;
+    gap: 18px;
+}
+
+.seti img {
+    display: block;
+    width: 20px;
+    height: 20px;
+}
+
+.avtor {
+    margin: 22px 0 0 52px;
+    font-size: 12px;
+    color: #8a8a8a;
+}
+
+@media (max-width: 768px) {
+
+    body {
+        padding-top: 14px;
+    }
+
+    header {
+        top: 14px;
+    }
+
+    .menyu {
+        width: 280px;
+        max-width: 90%;
+        height: 38px;
+        gap: 20px;
+        font-size: 12px;
+    }
+
+    .spisok {
+        gap: 18px;
+        margin-top: 60px;
+    }
+
+    .kartochka {
+        flex-direction: column;
+        gap: 14px;
+        height: auto;
+        padding: 24px 22px;
+        border-radius: 28px;
+    }
+
+    .info h3 {
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+    .podzagolovok {
+        font-size: 12px;
+        line-height: 18px;
+    }
+
+    .data {
+        margin-top: 8px;
+        font-size: 10px;
+    }
+
+    .ssylka {
+        margin-top: 0;
+        font-size: 12px;
+    }
+
+    footer {
+        margin-top: 70px;
+        padding-bottom: 24px;
+    }
+
+    .polosa {
+        height: 40px;
+        padding: 0 16px;
+        font-size: 11px;
+    }
+
+    .seti img {
+        width: 14px;
+        height: 14px;
+    }
+
+    .avtor {
+        margin: 12px 0 0 16px;
+        font-size: 8px;
+    }
+}

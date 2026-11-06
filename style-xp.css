@@ -1,0 +1,281 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+body {
+    min-height: 100vh;
+    margin: 0;
+    padding-top: 20px;
+    background-color: #0C0C0D;
+    font-family: Arial, sans-serif;
+}
+
+
+.menyu {
+    width: 359.25px;
+    height: 52.5px;
+    margin: 0 auto;
+    background-color: #131313;
+    border-radius: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 31.5px;
+}
+
+.menyu a {
+    color: #B292FF;
+    text-decoration: none;
+}
+
+.menyu .tekushaya {
+    color: white;
+}
+
+
+.znania {
+    display: flex;
+    justify-content: center;
+    width: 1250px;
+    max-width: 90%;
+    margin: 100px auto 0 auto;
+}
+
+.znania-tekst {
+    max-width: 440px;
+    text-align: center;
+}
+
+.znania-tekst p {
+    margin-bottom: 30px;
+    font-size: 18px;
+    line-height: 36px;
+    color: #8d8d8d;
+}
+
+.znania-tekst strong {
+    color: #C8C8C8;
+}
+
+.knopka {
+    display: inline-block;
+    padding: 12px 34px;
+    border-radius: 20px;
+    background-color: white;
+    color: black;
+    font-size: 14px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+
+.spisok {
+    display: flex;
+    flex-direction: column;
+    gap: 62px;
+    width: min(1136px, calc(100% - 40px));
+    margin: 110px auto 0 auto;
+}
+
+.kartochka {
+    display: grid;
+    grid-template-columns: 397px 1fr;
+    padding: 27px 62px 20px 62px;
+    border-radius: 60px;
+    background-color: #141414;
+}
+
+.kartochka.vysokaya {
+    padding: 50px 62px 42px 62px;
+}
+
+.sleva,
+.sprava {
+    min-width: 0;
+}
+
+.sleva h3 {
+    margin: 0;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 32px;
+    color: white;
+}
+
+.proekt {
+    margin: 2px 0 0 0;
+    font-size: 15px;
+    line-height: 22px;
+    color: #B292FF;
+}
+
+.data {
+    margin: 0;
+    font-size: 11px;
+    line-height: 17px;
+    color: #555555;
+}
+
+.proekt + .data {
+    margin-top: 10px;
+}
+
+.data span {
+    margin: 0 4px;
+    color: #5FB9B0;
+}
+
+.sprava h4 {
+    margin: 0 0 22px 0;
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 24px;
+    color: #B292FF;
+}
+
+.sprava p {
+    margin: 0 0 20px 0;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 32px;
+    color: #4f4f4f;
+}
+
+.sprava p:last-child {
+    margin-bottom: 0;
+}
+
+.sprava a {
+    color: #6b6b6b;
+    text-decoration: none;
+    overflow-wrap: anywhere;
+}
+
+
+footer {
+    width: min(1165px, calc(100% - 40px));
+    margin: 165px auto 0 auto;
+    padding-bottom: 50px;
+}
+
+.polosa {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 66px;
+    padding: 0 52px;
+    background-color: #131313;
+    border-radius: 40px;
+    font-size: 18px;
+    font-weight: 300;
+    color: #8a8a8a;
+}
+
+.polosa p {
+    margin: 0;
+}
+
+.seti {
+    display: flex;
+    gap: 16px;
+}
+
+.seti img {
+    display: block;
+    width: 20px;
+    height: 20px;
+}
+
+.avtor {
+    margin: 20px 0 0 52px;
+    font-size: 12px;
+    color: #8a8a8a;
+}
+
+
+@media (max-width: 900px) {
+    .kartochka,
+    .kartochka.vysokaya {
+        grid-template-columns: 1fr;
+        gap: 22px;
+        padding: 36px 40px;
+    }
+}
+
+
+@media (max-width: 768px) {
+
+    body {
+        padding-top: 14px;
+    }
+
+    .menyu {
+        width: 280px;
+        max-width: 90%;
+        height: 38px;
+        gap: 20px;
+        font-size: 12px;
+    }
+
+    .spisok {
+        gap: 18px;
+        margin-top: 50px;
+    }
+
+    .kartochka,
+    .kartochka.vysokaya {
+        gap: 14px;
+        padding: 24px 22px;
+        border-radius: 28px;
+    }
+
+    .sleva h3 {
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+    .proekt {
+        font-size: 12px;
+    }
+
+    .data {
+        font-size: 10px;
+    }
+
+    .sprava h4 {
+        margin-bottom: 10px;
+        font-size: 13px;
+    }
+
+    .sprava p {
+        margin-bottom: 12px;
+        font-size: 12px;
+        line-height: 22px;
+    }
+
+    footer {
+        margin-top: 70px;
+        padding-bottom: 24px;
+    }
+
+    .polosa {
+        height: 40px;
+        padding: 0 16px;
+        font-size: 11px;
+    }
+
+    .seti img {
+        width: 14px;
+        height: 14px;
+    }
+
+    .avtor {
+        margin: 12px 0 0 16px;
+        font-size: 8px;
+    }
+}
